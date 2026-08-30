@@ -1,0 +1,10 @@
+{
+  "allowedRoots": [
+    "/CodexOrganizerSandbox"
+  ],
+  "writesEnabled": false,
+  "deleteEnabled": false,
+  "maxBatchSize": 50,
+  "planTtlSeconds": 600,
+  "logRetentionDays": 7
+}

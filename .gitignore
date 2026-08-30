@@ -1,0 +1,46 @@
+# Dependencies and build output
+**/node_modules/
+npm-debug.log*
+
+# Credentials and OAuth state
+.env
+.env.*
+!.env.example
+*.dpapi
+access-token*
+oauth-state.txt
+token-metadata.json
+write-quarantine.json
+
+# Runtime configuration and logs
+**/config/safety.json
+**/config/safety.*.json
+!**/config/safety.example.json
+**/logs/
+*.log
+*.jsonl
+
+# Private inventories, plans, manifests, and audit exports
+private-data/
+local-output/
+reports/private/
+*inventory*.json
+*manifest*.json
+*move-audit*.*
+*cleanup-plan*.*
+*organization-plan*.*
+
+# Local Codex settings and caches
+.codex/config.toml
+.codex/*.local.*
+.codex/cache/
+.agents/plugins/cache/
+
+# Temporary and editor files
+*.tmp
+*.bak
+*.before-*
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/

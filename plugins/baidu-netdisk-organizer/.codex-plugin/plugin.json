@@ -1,0 +1,36 @@
+{
+  "name": "baidu-netdisk-organizer",
+  "version": "0.1.0",
+  "description": "Safely inventory and organize Baidu Netdisk with read-only planning and hash-confirmed changes.",
+  "author": {
+    "name": "yangshulin2333",
+    "url": "https://github.com/yangshulin2333"
+  },
+  "homepage": "https://github.com/yangshulin2333/codex-baidu-netdisk-organizer#readme",
+  "repository": "https://github.com/yangshulin2333/codex-baidu-netdisk-organizer",
+  "license": "MIT",
+  "keywords": [
+    "baidu-netdisk",
+    "codex",
+    "mcp",
+    "file-organization"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "百度网盘整理 Agent",
+    "shortDescription": "默认只读盘点，经确认后安全整理百度网盘",
+    "longDescription": "连接百度网盘后先进行只读盘点与分类，所有创建目录、移动、重命名和删除操作都必须经过一次性计划哈希确认，并在执行后回读验收。",
+    "developerName": "yangshulin2333",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "先只读扫描我的百度网盘并给出整理方案。",
+      "查找命名问题和重复候选，但不要修改文件。",
+      "检查连接状态和当前安全门禁。"
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

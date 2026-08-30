@@ -1,0 +1,6 @@
+interface:
+  display_name: "百度网盘整理"
+  short_description: "默认只读盘点，经哈希确认后安全移动、重命名或删除云盘文件"
+  default_prompt: "使用 $baidu-netdisk-organizer 只读扫描我的百度网盘并先给出整理方案。"
+policy:
+  allow_implicit_invocation: true

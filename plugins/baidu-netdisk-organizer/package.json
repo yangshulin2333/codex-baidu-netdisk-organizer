@@ -1,0 +1,22 @@
+{
+  "name": "codex-baidu-netdisk-organizer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Safety-gated Baidu Netdisk organizer MCP and Codex skill",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "esbuild mcp/src/server.mjs --bundle --platform=node --format=esm --target=node20 --outfile=mcp/dist/server.mjs && node mcp/build/generate-third-party-licenses.mjs",
+    "test": "node --test mcp/test/*.test.mjs",
+    "check": "npm run test && npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

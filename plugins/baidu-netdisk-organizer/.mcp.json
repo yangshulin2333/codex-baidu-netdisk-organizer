@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "baidu-netdisk-organizer": {
+      "cwd": ".",
+      "command": "powershell.exe",
+      "args": [
+        "-NoLogo",
+        "-NoProfile",
+        "-NonInteractive",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "./scripts/Start-BaiduNetdiskMcp.ps1"
+      ]
+    }
+  }
+}

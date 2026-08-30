@@ -1,0 +1,20 @@
+{
+  "name": "baidu-netdisk-tools",
+  "interface": {
+    "displayName": "Baidu Netdisk Tools"
+  },
+  "plugins": [
+    {
+      "name": "baidu-netdisk-organizer",
+      "source": {
+        "source": "local",
+        "path": "./plugins/baidu-netdisk-organizer"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
