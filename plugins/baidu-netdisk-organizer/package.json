@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "esbuild mcp/src/server.mjs --bundle --platform=node --format=esm --target=node20 --outfile=mcp/dist/server.mjs && node mcp/build/generate-third-party-licenses.mjs",
-    "test": "node --test mcp/test/*.test.mjs",
+    "test": "node --test",
     "check": "npm run test && npm run build"
   },
   "dependencies": {
